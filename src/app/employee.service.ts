@@ -9,6 +9,7 @@ export class EmployeeService {
   getEmployees() {
     return [
       { name: 'François', skills: ['Python', 'perl', 'C++'], role: 'Formateur' },
+      { name: 'Manu', skills: ['Prolog', 'C', 'PHP'], role: 'Formateur' },
       { name: 'Yannick', skills: ['Prolog', 'C++', 'PHP'], role: 'Formateur itinérant' },
       { name: 'Maxime', skills: ['React', 'JS', 'SQL', 'CSS'], role: 'stagiaire' },
       { name: 'Logan', skills: ['React', 'Node', 'PHP'], role: 'stagiaire' },
