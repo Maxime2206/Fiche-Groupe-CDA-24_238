@@ -15,7 +15,7 @@ export class EmployeeService {
       { name: 'Logan', skills: ['React', 'Node', 'PHP'], role: 'stagiaire' },
       { name: 'Fabrice', skills: ['PHP', 'SCSS', 'CSS'], role: 'stagiaire' },
       { name: 'Mickael Lachevre', skills: ['CSS', 'JS', 'PHP'], role: 'stagiaire' },
-      { name: 'Margot', skills: ['?'], role: 'stagiaire' },
+      { name: 'Margot', skills: ['PHP', 'SQL'], role: 'stagiaire' },
       { name: 'Loic', skills: ['PHP', 'SQL', 'HTML'], role: 'stagiaire' },
       { name: 'Tony', skills: ['Python', 'PHP', 'SQL'], role: 'stagiaire' },
       { name: 'Ibrahima', skills: ['SQL', 'CSS', 'PHP'], role: 'stagiaire' },
