@@ -1,27 +1,56 @@
-# MiniEntreprise
+# Fiche Personnelle CDA 24_238
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+# Version Français
+# Employee Showcase - Angular Project
 
-## Development server
+Ce projet Angular est une application simple permettant d'afficher une liste d'employés, leurs rôles, et leurs langages favoris. Il illustre l'utilisation de la directive `*ngFor` pour parcourir et afficher des données dynamiques dans un composant.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🛠 Fonctionnalités
 
-## Code scaffolding
+- Affiche une liste d'employés sous forme de cartes.
+- Présente le rôle de chaque employé.
+- Liste leurs langages de programmation favoris.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ✨ Exemple de Composant
 
-## Build
+Voici un extrait de code représentant le composant principal utilisé dans ce projet :
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```html
+<div class="employee-container">
+  <div class="employee-card" *ngFor="let employee of employees">
+    <h3>{{ employee.name }}</h3>
+    <p><strong>Rôle :</strong> {{ employee.role }}</p>
+    <p><strong>Langages Favoris :</strong></p>
+    <ul>
+      <li *ngFor="let skill of employee.skills">{{ skill }}</li>
+    </ul>
+  </div>
+</div>
+```
+# English Version
+# Employee Showcase - Angular Project
 
-## Running unit tests
+This Angular project is a simple application that displays a list of employees, their roles, and their favorite programming languages. It demonstrates the use of the `*ngFor` directive to iterate over and display dynamic data in a component.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🛠 Features
 
-## Running end-to-end tests
+- Displays a list of employees in card format.
+- Shows each employee's role.
+- Lists their favorite programming languages.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## ✨ Component Example
 
-## Further help
+Here is the main component used in this project:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```html
+<div class="employee-container">
+  <div class="employee-card" *ngFor="let employee of employees">
+    <h3>{{ employee.name }}</h3>
+    <p><strong>Role:</strong> {{ employee.role }}</p>
+    <p><strong>Favorite Languages:</strong></p>
+    <ul>
+      <li *ngFor="let skill of employee.skills">{{ skill }}</li>
+    </ul>
+  </div>
+</div>
+```

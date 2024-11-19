@@ -1,0 +1,10 @@
+<div class="employee-container">
+  <div class="employee-card" *ngFor="let employee of employees">
+    <h3>{{ employee.name }}</h3>
+    <p><strong>Rôle :</strong> {{ employee.role }}</p>
+    <p><strong>Langages Favoris :</strong></p>
+    <ul>
+      <li *ngFor="let skill of employee.skills">{{ skill }}</li>
+    </ul>
+  </div>
+</div>
